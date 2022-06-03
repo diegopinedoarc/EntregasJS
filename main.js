@@ -23,7 +23,13 @@ let arrayNum = [1,2,3,4,5,6,7,8,9,10];
 // }
 
 //Imprime todos menos la 4ta posicion
-
+// for (let i = 0; i < arrayNum.length; i++) {
+//   if (i === 3) {
+//     continue;
+//   }
+//   console.log(arrayNum[i]);
+// }
+//---------------------------------------------------------------------------------------------------
 
 
 
@@ -32,9 +38,7 @@ let arrayNum = [1,2,3,4,5,6,7,8,9,10];
 
 // 👉 Crear un array con, al menos, 10 ingredientes para hacer pizzas 🍕 (puede ser tanto masa como los ingredientes que van sobre la base).
 
-let ingredientesPizza = ['harina', 'aceite de oliva', 'agua', 'sal', 'tomate','cebolla','aceitunas','morron','rucula','muzzarella'];
-let pares = [];
-let impares = [];
+
 
 // 👉 Crear una función que acepte ese array como parámetro. 
 // Dentro de la función, debemos lograr lo siguiente: 
@@ -42,6 +46,9 @@ let impares = [];
 // 👉 Hacer lo mismo con los impares, enviándolos al array "impares". 
 // 👉 Imprimir en consola:  "Los ingredientes pares son: (ingredientes en array pares). 
 // Los ingredientes impares son: (ingredientes en array impares)."
+let ingredientesPizza = ['harina', 'aceite de oliva', 'agua', 'sal', 'tomate','cebolla','aceitunas','morron','rucula','muzzarella'];
+let pares = [];
+let impares = [];
 
 let paresImpares = (ingredientesPizza) => {
   for (let i = 9; i < ingredientesPizza.length; i++) {
@@ -56,4 +63,3 @@ let paresImpares = (ingredientesPizza) => {
 paresImpares(ingredientesPizza)
 console.log(`Los ingredientes pares son: ${pares}. 
 // Los ingredientes impares son: ${impares}.`)
-
