@@ -58,8 +58,10 @@ let paresImpares = (ingredientesPizza) => {
     pares.push(numPares);
    
   }
+  console.log(`Los ingredientes pares son: ${pares}. 
+// Los ingredientes impares son: ${impares}.`)
 }
 
 paresImpares(ingredientesPizza)
-console.log(`Los ingredientes pares son: ${pares}. 
-// Los ingredientes impares son: ${impares}.`)
+
+//-----------------------------------------------------------
